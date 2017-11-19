@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+.clearIt {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative;
+}
+.row {
+    width: 100%;
+}
+
+.hero-bg {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+}
+
+body {
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ---------- H E A D E R ---------- */
+
+header {
+    z-index: 10;
+    min-height: 500px; 
+    padding-top: 3rem;
+}
+
+header .head-line img {
+    width: 80%;
+    width: 70%;
+    margin: 0 15%;
+    margin-top: 0;
+}
+header .head-line h3 {
+    width: 70%;
+    padding: 10% 15% 0 15%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#stores {
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+}
+#stores li {
+    list-style: none;
+}
+
+#stores li, #stores a {
+    height: 55px;
+    display: inline-block;
+    width: 181px;
+    transform: scale(.7);
+    list-style: none;
+    text-align: center;
+}
+#googlePlay {
+    1margin-left: 0px;
+    background: url('../assets/google-apple.png') -200px 0;
+}
+#appleStore {
+    1margin-right: 0px;
+    background: url('../assets/google-apple.png') 0px 0;
+}
+    
+@media only screen and (min-width: 768px) {
+    
+    header.hero-bg {
+        height:0px;
+    }
+    
+    header > .container > .head-line {
+        width: 100%;
+        padding-top: 20%;
+    }
+    
+    header .head-line img {
+        width: 27%;
+        padding: 0;
+        margin-left: 28%;
+        margin-right: 0;
+    }    
+    
+    header .head-line h3 {
+        float: right;
+        width: 25%;
+        padding: 0;
+        margin-right: 18%;
+        margin-top: 4%;
+        font-size: 1.55rem;
+    }
+    
+    #stores {
+        margin-top: 90px;
+    }    
+}
+
+@media only screen and (min-width: 960px) {
+    
+    header .head-line img {
+            margin-left: 29.5%;
+    }
+    #stores {
+        margin-top: 80px;
+    }
+    #stores li, #stores a {
+        margin: 2%;
+        transform: scale(1.0);
+    }
+    header .head-line h3 {
+        margin-right: 15%;
+        margin-top: 50px;
+        font-size: 2.9rem;
+    }      
+    
+    header.hero-bg {
+        height: 850px;
+    }
+}
+
+
+/* ---- A B O U T ---------- */
+
+section.about {
+    min-height: 500px;
+    margin-top: -2.5rem;
+}
+.about .container {
+    padding-top: 0px;
+}
+
+section.about > div.container {
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.about .container p {
+    color: #3d0956;
+    font-weight: 600;
+    line-height: 1.5;
+    bottom:0;
+    z-index: 9;
+    font-size: .9rem;
+    padding: 50px 5px 0px 140px;   
+}
+
+.about .container p:last-of-type {
+    padding: 10px 5px 0px 140px;
+}
+
+@media only screen and (min-width: 465px) {
+    .about .container p,
+    .about .container p:last-of-type {
+        padding-right: 15px;
+        max-width: 350px;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    section.about {
+        min-height: 500px;
+        margin-top: 0;
+    }    
+    .about .container p {
+        font-weight: 500;
+        margin: 0% 3% 0 53%;
+        padding: 30px 0px 0px 0px;
+    }
+    .about .container p:last-of-type {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    
+    section.about > div.container {
+        overflow-y: visible;
+        padding-top: 150px;
+    }
+    
+    section.about {
+        min-height: 990px;    
+    }
+    
+    section.about .container p {
+        font-size: 1.35rem;
+        max-width: none;
+    }
+    
+    section.about .container p:last-of-type {
+        max-width: none;
+    }
+}
+
+
+/* ---- M E N U ---------- */
+
+section.menu {
+    min-height: 500px;
+    background-size: cover;
+    background-position: bottom left;
+    margin-bottom: -3px; 
+}
+
+section.menu nav {
+    width: 100%;
+    text-align: center;
+    background: #000;
+    
+}
+
+section.menu nav ul {
+    width: 100%;
+    height: 87px;
+}
+
+section.menu nav ul li {
+    letter-spacing: -1.5px;   
+    background: #b0c500;
+    background: transparent;
+    width: 32.4%;
+    padding:33px 0 15px 0;
+    margin: auto 0;
+    top: -50px;
+    display: inline-block;
+    height: 10px;
+    height: 39px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+section.menu nav ul li:first-of-type {
+    background: #b0c500;
+}
+section.menu nav ul li:nth-child(2) {
+    background: #e80056;
+}
+section.menu nav ul li:last-of-type {
+    background: #00b9ea;
+}
+
+section.menu nav ul li:hover {
+    color: #000;
+}
+
+section.menu .container p {
+    margin-right: 20px;
+    font-size: 0.8rem;
+    padding: 10px 30px;
+    margin-top: 30px;
+    line-height: 35px;
+}
+
+section.menu .container img {
+    position: absolute;
+    margin-top: 270px;
+    max-width: 120px;
+    margin-left: 180px;
+}
+
+
+@media only screen and (min-width: 468px) {
+    section.menu nav ul li {
+        1width: 32.9%;
+    }  
+    
+    section.menu .container img {
+        margin-top: 170px;
+        max-width: 170px;
+        margin-left: 20px;
+    }    
+    
+    section.menu .container p {
+        margin-left: 50px;
+        width: 50%;
+        font-size: 1.2rem;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+
+    
+    section.menu nav ul {
+        height: 88px;
+    }    
+    
+    section.menu nav ul li {
+        height: 40px;
+        font-size: 2.5rem;
+    }
+    
+    section.menu .container p {
+        font-size: 1.5rem;
+        line-height: 37px;        
+        margin-top: 60px;
+        float: none;
+        width: 40%;
+    }     
+    
+    
+    section.menu .container img {
+        margin-top: 100px;
+        max-width: 280px;
+        margin-left: 480px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    section.menu nav ul li {
+        width: 33%;
+    }
+    section.menu .container p {
+        margin-right: 50px    
+    }
+    
+    
+    
+}
+
+
+
+
+@media only screen and (min-width: 960px) {
+    section.menu nav {
+        height: 139px
+    }
+    
+    section.menu {
+        min-height: 800px;
+        background-size: cover;
+        background-position: bottom;
+        margin-bottom: -3px; 
+    }    
+    
+    section.menu nav ul {
+        width: 100%;
+        padding-top: 0px;
+    }    
+    
+    section.menu nav ul li {
+        width: 33%;
+        padding:49px 0 50px 0;     display: inline-block;
+        1margin: 0 5%;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: -3px;      
+        padding: none;
+    }
+        
+    section.menu .container p {
+        width: 41%;
+        font-size: 1.8rem;
+        float: right;
+        margin-top: 200px;
+        margin-right: 120px;
+        margin-left: none;
+    }    
+    
+    section.menu .container img {
+        margin-top: 140px;
+        max-width: 380px;
+        margin-left: 60px;
+    }    
+    
+}
+
+@media only screen and (min-width: 1267px) {
+    
+    section.menu .container img {
+        margin-left: 200px;
+    } 
+    
+    section.menu nav ul li:first-of-type, 
+    section.menu nav ul li:nth-child(2), 
+    section.menu nav ul li:last-of-type  {
+        background: transparent;
+    } 
+    
+    section.menu nav {
+        background: none;
+    }   
+    section.menu .container p {
+        margin-right: 120px;
+    }
+}
+/* ---- B L O G ---------- */
+
+section.blog {
+    min-height: 500px;
+    background: #07949d;
+    padding: 50px 0 30px 0;   
+}
+
+section.blog .container {
+    text-align: center;
+}
+
+section.blog h5 {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 2.5rem;
+}
+.blog-gallery {
+    display: table;
+    max-width: 100%;
+    margin: auto; 
+}
+.blog-item {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    margin: 15px 15px 0 15px;
+}
+.blog-item figure {
+    display: block; 
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-item figure img {
+    position: relative;
+    width: 100%;
+    margin: 0; 
+    transition: all ease .7s;
+}
+
+.blog-item figure img:hover {
+    transform: scale(1.2);
+}
+
+.blog-item figure figcaption {
+    position: relative;
+    padding: 60px 20px 20px 20px;
+    display: block;
+    text-align: left;
+    background: #03494c;
+    height: 120px;
+    color: #ffff;
+    border-top: 5px solid #ffff;
+}
+
+.blog > .container > img {
+    width: 90%;
+}
+
+.blog-item figure figcaption p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+
+.blog-item figure figcaption a {
+    color:#1bccb9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all ease .5s;
+}
+.blog-item figure figcaption a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.blog button {
+    cursor: pointer;
+    width: calc(100% - 30px);
+    background: #03494c;
+    color: #ffff;
+    margin: 15px 15px;
+    border-radius: 0;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 20px 0;
+    height: 65px;
+    font-size: 1rem;
+    letter-spacing: -.5px;
+    font-weight: 600;
+    transition: all .6s;
+}
+
+.blog button:hover {
+    color: #000;
+    box-shadow: inset 0 25em  .25px 0 #1bccb9;
+}
+
+    
+@media only screen and (min-width: 501px) {
+    section.blog {
+        padding: 150px 0 30px 0;   
+    }    
+    section.blog h5 {
+        font-size: 2.3rem;
+    }   
+    .blog-item {
+        width: 33.33%; 
+        margin: auto;
+    }
+    
+    .blog-item figure figcaption {
+        padding-top: 40px
+    }
+    
+    .blog-item figure figcaption p {
+        font-size: .9rem;
+        padding-bottom: 15px;
+        padding-right: 0;
+    }
+    .blog-item figure {
+        display: block; 
+        position: relative;
+        overflow: hidden;
+        margin: 0 10px 0 0;
+    }     
+    .blog-item:first-of-type figure  {
+        margin-right: 5px;
+    }    
+
+    .blog-item:nth-child(2) figure  {
+        margin-right: 0;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+    }
+    .blog-item:last-of-type figure  {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    .blog button {
+        font-size: 1.6rem;
+        margin: 15px 0px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    section.blog h5 {
+        font-size: 3rem;
+    }
+    .blog-item figure figcaption p {
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    
+    .blog .container > img {
+        width: 100%;
+    }    
+}
+@media only screen and (min-width: 1220px) {
+    .blog-item figure figcaption p {
+        font-size: 1.6rem;
+        
+    }
+} 
+
+
+
+/* ---- F O O T E R ---------- */
+
+.footer-line {
+    height: 10px;    
+
+    -webkit-background: -webkit-gradient(to right, #23a8e1 0%, #87c130 25%, #f5ee1b 42%, #ec6c1c 69%, #e3055e 100%);
+    
+    -webkit-background: -webkit-linear-gradient(to right, #23a8e1 0%, #87c130 25%, #f5ee1b 42%, #ec6c1c 69%, #e3055e 100%);
+    
+    -moz-background: -moz-linear-gradient(to right, #23a8e1 0%, #87c130 25%, #f5ee1b 42%, #ec6c1c 69%, #e3055e 100%);    
+    
+    -o-background: -o-linear-gradient(to right, #23a8e1 0%, #87c130 25%, #f5ee1b 42%, #ec6c1c 69%, #e3055e 100%);
+    
+    background: linear-gradient(to right, #23a8e1 0%, #87c130 25%, #f5ee1b 42%, #ec6c1c 69%, #e3055e 100%);
+}
+
+footer {
+    background: #034044;
+    position: absolute;
+    width: 100%;        
+}
+
+footer .container {
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+footer .container .row > img {
+    margin-top: 30px;
+    max-width: 200px
+}
+
+.ad, .social {
+    padding: 15px;
+}
+
+.social h5, .ad h5 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-top: 2rem;
+}
+
+.ad p {
+    margin: 5%;
+    line-height: 2;
+    text-align: center;
+}
+
+.ad p a {
+    text-decoration: none;
+    color:#1bccb9;
+    transition: all ease .5s;
+}
+.ad p a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+footer .social  img {
+    height: 50px;
+    padding: 2%;
+    margin-top: 5%;
+}
+#stores {
+    margin: 30px;
+}
+
+footer > row > p {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        padding-top: 2rem;
+    }
+    
+    .ad, .social {
+        width: 30%;
+    }
+
+    .ad, .social {
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .social h5, .ad h5 {
+        margin-top: 0;
+    }
+    
+    .ad h5, .ad p {
+        text-align: left;
+    }
+    
+    .ad p {
+        margin: 0;
+    }
+    
+    footer > .container > p {
+        bottom: 0;
+        width: 100%;
+    }   
+    
+    #stores {
+        width: 100%;
+        float: right;
+        margin: 35px 0 35px 0;
+    }
+    
+    img[alt="Sonder logo"] {
+        width: 50%;
+        float: right;
+        padding-right: 15px;
+    } 
+}
+
+@media only screen and (min-width: 1160px) {
+    .footer-line {
+        height: 15px;
+    }
+    
+    footer .container {
+        height: 220px;
+    }
+    
+    footer .container #stores {
+        float: right;
+        width: 32%;
+    }
+    
+    .ad {
+        width: 17%;
+        float: left;
+    }
+    .social {
+        float: left;
+        width: 20%;
+    }
+    
+    footer > .container > p {
+        width: 30%;
+        margin-top: 50px;
+    } 
+    
+    footer > .container #stores li, footer > .container #stores li #stores a {
+        margin: 2%;
+        transform: scale(.7);
+    }
+    
+    footer > .container #stores {
+        float: right;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+        height: 0px;
+    }
+    
+    footer > .container > .row > img {
+        margin-right: 7rem;
+    }
+}
