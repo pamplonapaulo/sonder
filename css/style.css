@@ -252,7 +252,7 @@ section.menu nav ul li:nth-child(2) {
     background: #e80056;
 }
 section.menu nav ul li:last-of-type {
-    background: #00b9ea;
+    background: #047ad4;
 }
 
 section.menu nav ul li:hover {
@@ -329,14 +329,8 @@ section.menu .container img {
     }
     section.menu .container p {
         margin-right: 50px    
-    }
-    
-    
-    
+    }   
 }
-
-
-
 
 @media only screen and (min-width: 960px) {
     section.menu nav {
