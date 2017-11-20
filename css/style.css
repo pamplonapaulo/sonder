@@ -260,18 +260,18 @@ section.menu nav ul li:hover {
 }
 
 section.menu .container p {
-    margin-right: 20px;
     font-size: 1rem;
     padding: 10px 30px;
     margin-top: 30px;
     line-height: 35px;
+    width: 80%;
+    padding-bottom: 20px;    
 }
 
 section.menu .container img {
     position: relative;
     float: right;
-    margin-top: 180px;
-    margin-right: 15px;
+    margin-top: 30px;
     max-width: 160px;
 }
 
@@ -279,6 +279,11 @@ section.menu .container img {
     section.menu nav ul li {
         font-size: 1.4rem;        
     }
+section.menu .container img {
+    margin-top: 170px;   
+}    
+    
+    
 }
 
 @media only screen and (min-width: 468px) {   
@@ -379,6 +384,22 @@ section.menu .container img {
     section.menu nav {
         background: none;
     }   
+}
+
+
+@media only screen and (min-width: 1655px) {
+    
+    section.menu nav ul li:first-of-type {
+        background: #c1ca41;
+    }
+    section.menu nav ul li:nth-child(2) {
+        background: #d13f7c;
+
+    }
+    section.menu nav ul li:last-of-type {
+        background: #378fd6;
+    } 
+    
 }
 /* ---- B L O G ---------- */
 
