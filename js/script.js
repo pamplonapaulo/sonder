@@ -1,5 +1,5 @@
 $(document).ready(function (){
-   
+    
     $('#viaje').on('click', function (e) {
        e.preventDefault();
         
@@ -30,11 +30,6 @@ $(document).ready(function (){
         
         $('.txt').html('Reserve hotéis, compre passagens  e planeje toda a sua viagem com nossas dicas e listas dentro do app. Reserve hotéis, compre passagens  e planeje toda a sua viagem com nossas dicas e listas dentro do app.');
         
-    });    
-    
-    
-    
-    
-    
+    });        
     
 });

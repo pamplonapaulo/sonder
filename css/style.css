@@ -218,14 +218,12 @@ section.menu {
 
 section.menu nav {
     width: 100%;
-    text-align: center;
-    background: #000;
-    
+    text-align: center;    
 }
 
 section.menu nav ul {
     width: 100%;
-    height: 87px;
+    height: 90px;
 }
 
 section.menu nav ul li {
@@ -233,26 +231,28 @@ section.menu nav ul li {
     background: #b0c500;
     background: transparent;
     width: 32.4%;
-    padding:33px 0 15px 0;
     margin: auto 0;
     top: -50px;
-    display: inline-block;
-    height: 10px;
-    height: 39px;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: all ease 1s;
+    display: flow-root;
+    float: left;
+    width: 33.33%;  
+    padding: 35px 0;
 }
 
 section.menu nav ul li:first-of-type {
-    background: #b0c500;
+    background: #c1ca41;
 }
 section.menu nav ul li:nth-child(2) {
-    background: #e80056;
+    background: #d13f7c;
+    
 }
 section.menu nav ul li:last-of-type {
-    background: #047ad4;
+    background: #378fd6;
 }
 
 section.menu nav ul li:hover {
@@ -261,72 +261,69 @@ section.menu nav ul li:hover {
 
 section.menu .container p {
     margin-right: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 10px 30px;
     margin-top: 30px;
     line-height: 35px;
 }
 
 section.menu .container img {
-    position: absolute;
-    margin-top: 270px;
-    max-width: 120px;
-    margin-left: 180px;
+    position: relative;
+    float: right;
+    margin-top: 180px;
+    margin-right: 15px;
+    max-width: 160px;
 }
 
-
-@media only screen and (min-width: 468px) {
+@media only screen and (min-width: 415px) {
     section.menu nav ul li {
-        1width: 32.9%;
-    }  
-    
-    section.menu .container img {
-        margin-top: 170px;
-        max-width: 170px;
-        margin-left: 20px;
-    }    
+        font-size: 1.4rem;        
+    }
+}
+
+@media only screen and (min-width: 468px) {   
     
     section.menu .container p {
-        margin-left: 50px;
-        width: 50%;
+        margin-left: 30px;
         font-size: 1.2rem;
-        float: right;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    
-
-    
-    section.menu nav ul {
-        height: 88px;
-    }    
-    
+@media only screen and (min-width: 660px) {
     section.menu nav ul li {
-        height: 40px;
         font-size: 2.5rem;
+        padding: 25px 0;  
     }
+    
+    section.menu .container p {
+        float: right;
+        width: 40%;
+        margin-right: 50px;
+        margin-top: 50px;
+    }   
+    
+    section.menu .container img {
+        float: left;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (min-width: 768px) {  
     
     section.menu .container p {
         font-size: 1.5rem;
         line-height: 37px;        
-        margin-top: 60px;
-        float: none;
-        width: 40%;
+        margin-top: 40px;
+        float: right;
     }     
     
-    
     section.menu .container img {
-        margin-top: 100px;
-        max-width: 280px;
-        margin-left: 480px;
+        margin-top: 90px;        
+        max-width: 220px;
     }
 }
 
 @media only screen and (min-width: 900px) {
-    section.menu nav ul li {
-        width: 33%;
-    }
     section.menu .container p {
         margin-right: 50px    
     }   
@@ -350,31 +347,21 @@ section.menu .container img {
     }    
     
     section.menu nav ul li {
-        width: 33%;
-        padding:49px 0 50px 0;     display: inline-block;
-        1margin: 0 5%;
-        text-transform: uppercase;
         font-size: 3rem;
-        font-weight: 600;
         letter-spacing: -3px;      
-        padding: none;
+        padding: none;        
+        padding: 49px 0 50px 0;
     }
         
     section.menu .container p {
-        width: 41%;
         font-size: 1.8rem;
-        float: right;
-        margin-top: 200px;
-        margin-right: 120px;
-        margin-left: none;
+        margin-top: 220px;
     }    
     
     section.menu .container img {
-        margin-top: 140px;
-        max-width: 380px;
-        margin-left: 60px;
-    }    
-    
+        margin-top: 180px;
+        max-width: 320px;
+    }     
 }
 
 @media only screen and (min-width: 1267px) {
@@ -392,9 +379,6 @@ section.menu .container img {
     section.menu nav {
         background: none;
     }   
-    section.menu .container p {
-        margin-right: 120px;
-    }
 }
 /* ---- B L O G ---------- */
 
