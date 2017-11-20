@@ -18,7 +18,6 @@ $(document).ready(function (){
         $('.mobile').attr('src', 'assets/mobile-conheca.png'); 
                      
         $('.txt').html('Conheça e troque experiências com pessoas do mundo todo, saiba em que balada os seus amigos estão e compartilhe fotos e informações em um feed com uma rede de contatos.'); 
-        
     });    
     
     $('#explore').on('click', function (e) {
@@ -29,7 +28,6 @@ $(document).ready(function (){
         $('.mobile').attr('src', 'assets/mobile-explore.png');
         
         $('.txt').html('Reserve hotéis, compre passagens  e planeje toda a sua viagem com nossas dicas e listas dentro do app. Reserve hotéis, compre passagens  e planeje toda a sua viagem com nossas dicas e listas dentro do app.');
-        
     });        
     
 });
